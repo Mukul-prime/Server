@@ -27,6 +27,8 @@ public class AiController {
     public ResponseEntity<?> Airesult(@RequestBody QueryRequestai queryRequestai){
         log.info(queryRequestai.toString());
        try {
+
+
            AIResponse aiResponse = aiService.Creators(queryRequestai.getQuery());
            return ResponseEntity.ok(aiResponse);
        }

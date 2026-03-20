@@ -36,6 +36,8 @@ public class AiService {
             return "";
         }
 
+
+
         String normalized = text.trim();
         if (normalized.startsWith("```")) {
             normalized = normalized.replaceFirst("^```(?:json)?\\s*", "");
